@@ -13,7 +13,7 @@ class RepositoriesController < ApplicationController
     if @resp.success?
       @repos=body["items"]
     else
-      @respos=body
+      @repos=body
     end
     render 'search'
   end
