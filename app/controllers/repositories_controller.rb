@@ -8,6 +8,7 @@ class RepositoriesController < ApplicationController
     qString=params[:query]
     @resp=Faraday.get "https://api.github.com/search/repositories" do |req|
       req.params['q']=qString
+      req.params["client_id"]=""
     end
     body=JSON.parse(@resp.body)
     if @resp.success?
