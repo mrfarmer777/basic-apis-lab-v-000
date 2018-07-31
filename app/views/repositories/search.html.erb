@@ -4,4 +4,5 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
+<%= if @repos ? @repos : "Nothing to display"%>
 
