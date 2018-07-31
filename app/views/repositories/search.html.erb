@@ -4,5 +4,7 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
-<%= @repos ? @repos : "Nothing to display"%>
+<% if @repos %>
+  <%@repose.each do |repo|%>
+    
 
