@@ -5,7 +5,8 @@ class RepositoriesController < ApplicationController
   end
 
   def github_search
-    qString=params[:]
+    qString=params[:query]
     @resp=Faraday.get("https://api.github.com/search/repositories")
+    
   end
 end
