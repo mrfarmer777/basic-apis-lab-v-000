@@ -8,6 +8,7 @@
   <%@repos.each do |repo|%>
   <div>
     <h2><a href="<%=repo['url']%>"><%=repo["name"]%></a></h2>
+    <p><a href="<%=repo['url']%>"><%=repo["url"]%></a></p>
     <p><%=repo["description"]%></p>
   </div>
   <%end%>
