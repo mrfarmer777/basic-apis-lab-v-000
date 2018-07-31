@@ -7,8 +7,8 @@
 <% if @repos %>
   <%@repos.each do |repo|%>
   <div>
-    <h2><a href="#"><%=repo["name"]%></a></h2>
-    <p></p>
+    <h2><a href="<%=repo['html_url']%>"><%=repo["name"]%></a></h2>
+    <p><%=repo["description"]%></p>
   </div>
   <%end%>
 <%end%>
