@@ -1,4 +1,4 @@
-require 'faraday'
+require 'Faraday'
 class RepositoriesController < ApplicationController
 
   def search
