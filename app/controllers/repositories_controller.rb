@@ -11,7 +11,7 @@ class RepositoriesController < ApplicationController
     end
     body=JSON.parse(@resp.body)
     if @resp.success?
-      @repos
+      @repos=body
     
   end
 end
