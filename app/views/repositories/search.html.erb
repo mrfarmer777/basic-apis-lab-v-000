@@ -7,5 +7,5 @@
 <% if @repos %>
   <%@repose.each do |repo|%>
     <h2><a href="<%=repo.html_url%>"><%=repo.name%></a></h2>
-    <p></p>
+    <p><%=repo.descprtion%></p>
 
